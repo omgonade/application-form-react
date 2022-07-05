@@ -1,0 +1,69 @@
+body {
+    background-color: rgba(255, 255, 255, 0.913);
+    margin: 0;
+    padding: 0;
+}
+
+.personal input,
+.postal input,
+textarea {
+    padding: 5px;
+    border: 2px solid rgb(112, 106, 106);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+label {
+    font-family: arial;
+}
+
+h2,
+h3 {
+    font-family: arial;
+    width: 100%;
+    padding: 2px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.content2,
+.content3 {
+    font-family: arial;
+    font-size: 15px;
+    position: relative;
+    background-color: beige;
+    padding: 7px;
+    left: -7px;
+    top: -38px;
+}
+
+.hed3_1 {
+    background-color: rgba(6, 51, 81, 0.792);
+    color: white;
+    position: relative;
+    padding: 2px;
+    left: -8px;
+    padding: 5px 5px;
+    top: -19px;
+    width: 100%;
+}
+
+.hed3_2 {
+    background-color: rgba(6, 51, 81, 0.792);
+    color: white;
+    position: relative;
+    padding: 2px;
+    left: -8px;
+    padding: 5px 5px;
+    top: -40px;
+    width: 100%;
+    margin: 0;
+}
+

@@ -1,0 +1,23 @@
+.advno {
+    background-color: rgba(232, 226, 142, 0.377);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid black;
+    display: inline-block;
+    position: relative;
+    left: 45%;
+    margin: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
