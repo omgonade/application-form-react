@@ -1,9 +1,10 @@
 import React from "react";
 import '../css/personalDetailsComponent.css';
-
-class PersonalDetails extends React.Component {
-    render() {
-        return (
+import Dob from "./DOB";
+import { Link} from "react-router-dom";
+const PersonalDetails = () => {
+    return (
+        <React.Fragment>
             <div className="personal">
                 <div className="hed2_1">
                     <h2>Personal Details:</h2>
@@ -15,7 +16,8 @@ class PersonalDetails extends React.Component {
                         <label htmlFor="fname">Father's Name: </label>
                         <input type="text" name="fname" id="fname" placeholder="Father's Name" required /><br />
                         <label htmlFor="dob">Date of birth: </label>
-                        <input type="date" name="dob" id="dob" required /><br />
+                        <Dob />
+                        {/* <input type="date" name="dob" id="dob" required /><br /> */}
                         <label htmlFor="gender">Gender:</label>
                         <input type="radio" name="gender" id="male" value="male" required />
                         <label htmlFor="male">Male</label>
@@ -27,13 +29,14 @@ class PersonalDetails extends React.Component {
                         <input type="radio" name="marital" id="unmarried" value="unmarried" required />
                         <label htmlFor="unmarried">Unmarried</label><br />
                         <label htmlFor="nation">Nationality:</label>
-                        <input type="text" name="nation" id="nation" required />
-                        <button type="submit">Next</button>
+                        <input type="text" name="nation" id="nation" required />                        
                     </form>
+                    {/* <Link to="/postal">Next</Link>                         */}
                 </div>
             </div>
-        );
-    };
+        </React.Fragment>
+    );
+
 };
 
 export default PersonalDetails;

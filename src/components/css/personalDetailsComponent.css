@@ -1,10 +1,13 @@
+body{
+    margin:0;
+    padding:0;
+}
 .content1 {
     font-family: arial;
     font-size: 15px;
     position: relative;
     background-color: beige;
-    padding: 7px;
-    left: -7px;
+    padding:5px;
 }
 
 .personal .hed2_1,
@@ -14,5 +17,5 @@
     color: white;
     position: relative;
     padding: 2px;
-    left: -8px;
+    width:100%;
 }
