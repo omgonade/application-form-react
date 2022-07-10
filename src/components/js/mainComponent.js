@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import '../css/mainComponent.css';
-import PersonalDetails from "./personalDetailsComponent";
-
+import PostApply from "./postapply";
+import {BrowserRouter, Route, Routes } from "react-router-dom";
+import Postal from "./postal";
 const Main = () => {
     const [advtIsSelected, setAdvtIsSelected] = useState();
-
     const selectAdvt = (e) => {
         if (e.target.value === "none") {
             setAdvtIsSelected(false);
@@ -28,7 +28,12 @@ const Main = () => {
                 </form>
             </div>
             </section>
-            {advtIsSelected ? <PersonalDetails /> : null}
+            {advtIsSelected ? <PostApply /> : null}
+            {/* <BrowserRouter>
+                <Routes>
+                    <Route path="/postal" element={<Postal />} />
+                </Routes>
+            </BrowserRouter> */}
         </React.Fragment>
     );
 };
