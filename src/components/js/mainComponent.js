@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import '../css/mainComponent.css';
 import PostApply from "./postapply";
+import PersonalDetails from "./personalDetailsComponent";
 import {BrowserRouter, Route, Routes } from "react-router-dom";
 import Postal from "./postal";
 const Main = () => {
@@ -14,7 +15,6 @@ const Main = () => {
             setAdvtIsSelected(true);
         }
     };
-
     return (
         <React.Fragment>
             <section><div className="advno">
@@ -29,11 +29,8 @@ const Main = () => {
             </div>
             </section>
             {advtIsSelected ? <PostApply /> : null}
-            {/* <BrowserRouter>
-                <Routes>
-                    <Route path="/postal" element={<Postal />} />
-                </Routes>
-            </BrowserRouter> */}
+            
+            
         </React.Fragment>
     );
 };

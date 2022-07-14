@@ -1,8 +1,12 @@
 import React from "react";
 import '../css/personalDetailsComponent.css';
 import Dob from "./DOB";
-import { Link} from "react-router-dom";
+import Postal from "./postal";
+import { useNavigate } from "react-router-dom";
 const PersonalDetails = () => {
+
+    let navigate = useNavigate();
+    
     return (
         <React.Fragment>
             <div className="personal">
@@ -29,11 +33,13 @@ const PersonalDetails = () => {
                         <input type="radio" name="marital" id="unmarried" value="unmarried" required />
                         <label htmlFor="unmarried">Unmarried</label><br />
                         <label htmlFor="nation">Nationality:</label>
-                        <input type="text" name="nation" id="nation" required />                        
+                        <input type="text" name="nation" id="nation" required />
+                        <button onClick={() => navigate("/postal")}>Next</button>
                     </form>
-                    {/* <Link to="/postal">Next</Link>                         */}
+
                 </div>
             </div>
+
         </React.Fragment>
     );
 
